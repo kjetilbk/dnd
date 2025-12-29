@@ -2,6 +2,7 @@
 # Bokbinderen Lirion
 
 ## Innhold
+* TOC
 {:toc}
 
 ## Hovedkonsept:
