@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Åstedskart · Candlekeep-mysteriet</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕯️</text></svg>">
+</head>
+<body>
+<header>
+  <div class="site-title"><a href="index.html">🕯️ Candlekeep-mysteriet</a></div>
+  <nav><a href="index.html">Kampanjen</a><a href="tidslinje.html">Tidslinje</a><a href="aastedskart.html" class="active">Åstedskart</a><a href="candlekeep-avhorsnotater-2026-08.html">Rånotater I</a><a href="candlekeep-notater-2026-08-del2.html">Rånotater II</a><a href="candlekeep-notater-aug-2026.html">Kilde</a></nav>
+</header>
+<main>
+
+<h1>Åstedskart — Janussis kvarter</h1>
+<p>To etasjer — trappa nevnes i avhørene («løp ned trappa»). Rekonstruert fra den runde
+skissen i notatene; møbelplasseringen (og fordelingen mellom etasjene) er omtrentlig —
+bare <strong>edelsteinen</strong> var tegnet inn på originalskissen. <code>(?)</code> = usikker lesning.</p>
+
+<h2>1. etasje — kontoret</h2>
+<svg viewBox="0 0 720 780" role="img" aria-label="Kart over kontoret i første etasje" class="room-map">
+  <!-- room wall -->
+  <circle cx="360" cy="380" r="300" class="wall"/>
+  <!-- door at the bottom -->
+  <rect x="322" y="668" width="76" height="18" rx="4" class="door"/>
+  <text x="360" y="712" class="lbl muted" text-anchor="middle">Dør (Daral hamret her 22:30)</text>
+
+  <!-- stairs up, upper right -->
+  <g>
+    <rect x="470" y="185" width="80" height="72" rx="4" class="furn"/>
+    <line x1="470" y1="203" x2="550" y2="203" class="furn-line"/>
+    <line x1="470" y1="221" x2="550" y2="221" class="furn-line"/>
+    <line x1="470" y1="239" x2="550" y2="239" class="furn-line"/>
+  </g>
+  <text x="510" y="288" class="lbl" text-anchor="middle">Trapp opp</text>
+
+  <!-- bookshelf, upper left along the wall -->
+  <g transform="rotate(-38 205 205)">
+    <rect x="115" y="185" width="180" height="34" rx="4" class="furn"/>
+    <line x1="151" y1="185" x2="151" y2="219" class="furn-line"/>
+    <line x1="187" y1="185" x2="187" y2="219" class="furn-line"/>
+    <line x1="223" y1="185" x2="223" y2="219" class="furn-line"/>
+    <line x1="259" y1="185" x2="259" y2="219" class="furn-line"/>
+  </g>
+  <text x="95" y="128" class="lbl">Bokhylle</text>
+  <text x="95" y="147" class="lbl muted">(bok på «E» mangler)</text>
+
+  <!-- desk, center -->
+  <rect x="300" y="360" width="170" height="88" rx="6" class="furn"/>
+  <rect x="318" y="376" width="46" height="30" rx="2" class="furn-line-fill"/>
+  <circle cx="440" cy="390" r="7" class="ink"/>
+  <text x="385" y="404" class="lbl" text-anchor="middle">Pult</text>
+  <text x="385" y="422" class="lbl muted" text-anchor="middle">notater · blekk · pipe</text>
+
+  <!-- tipped-over chair -->
+  <g transform="rotate(64 300 500)">
+    <rect x="272" y="486" width="56" height="28" rx="5" class="furn danger"/>
+  </g>
+  <text x="345" y="562" class="lbl" text-anchor="middle">Stol (veltet)</text>
+
+  <!-- the body: chalk outline; exact spot not in the notes, guessed by the desk -->
+  <g class="body-outline">
+    <circle cx="470" cy="472" r="13"/>
+    <path d="M 484 472 q 30 -14 62 -6 q 22 6 34 16 q -6 14 -26 16 q -34 4 -70 -8 z"/>
+  </g>
+  <text x="478" y="436" class="lbl muted" text-anchor="start">Janussi funnet her(?)</text>
+
+  <!-- armchair, lower right -->
+  <rect x="465" y="505" width="74" height="70" rx="16" class="furn"/>
+  <rect x="477" y="517" width="50" height="40" rx="10" class="furn-line-fill"/>
+  <text x="502" y="605" class="lbl" text-anchor="middle">Lenestol</text>
+  <text x="502" y="623" class="lbl muted" text-anchor="middle">kattehår · hestehår i trekket</text>
+
+  <!-- safe, lower left -->
+  <rect x="200" y="524" width="62" height="56" rx="5" class="furn"/>
+  <circle cx="231" cy="552" r="9" class="furn-line-fill"/>
+  <text x="231" y="612" class="lbl" text-anchor="middle">Pengeskap</text>
+  <text x="231" y="630" class="lbl muted" text-anchor="middle">(saffir + lapp mangler)</text>
+</svg>
+
+<h2>2. etasje — soverommet</h2>
+<svg viewBox="0 0 720 720" role="img" aria-label="Kart over soverommet i andre etasje" class="room-map">
+  <!-- room wall -->
+  <circle cx="360" cy="360" r="300" class="wall"/>
+
+  <!-- stairs down, bottom -->
+  <g>
+    <rect x="330" y="570" width="80" height="70" rx="4" class="furn"/>
+    <line x1="330" y1="588" x2="410" y2="588" class="furn-line"/>
+    <line x1="330" y1="606" x2="410" y2="606" class="furn-line"/>
+    <line x1="330" y1="624" x2="410" y2="624" class="furn-line"/>
+  </g>
+  <text x="425" y="612" class="lbl" text-anchor="start">Trapp ned</text>
+
+  <!-- bed, upper right -->
+  <rect x="420" y="150" width="140" height="80" rx="8" class="furn"/>
+  <rect x="428" y="158" width="38" height="64" rx="6" class="furn-line-fill"/>
+  <text x="490" y="195" class="lbl" text-anchor="middle">Seng</text>
+
+  <!-- nightstand -->
+  <rect x="575" y="240" width="42" height="42" rx="4" class="furn"/>
+  <text x="596" y="310" class="lbl" text-anchor="middle">Nattbord</text>
+  <text x="596" y="328" class="lbl muted" text-anchor="middle">(svak hvisken?)</text>
+
+  <!-- gem — the one thing actually drawn on the sketch -->
+  <g transform="translate(420 288)">
+    <polygon points="0,-16 12,-5 7,12 -7,12 -12,-5" class="gem"/>
+  </g>
+  <text x="420" y="255" class="lbl gem-lbl" text-anchor="middle">Edelstein (fra skissen)</text>
+
+  <!-- oven, left -->
+  <rect x="100" y="310" width="58" height="72" rx="5" class="furn"/>
+  <circle cx="129" cy="336" r="12" class="furn-line-fill"/>
+  <text x="129" y="410" class="lbl" text-anchor="middle">Ovn</text>
+  <text x="129" y="428" class="lbl muted" text-anchor="middle">(magiske runer?)</text>
+
+  <!-- drift globe -->
+  <circle cx="262" cy="272" r="20" class="furn"/>
+  <text x="262" y="320" class="lbl" text-anchor="middle">Driftglobus(?)</text>
+
+  <!-- washstand -->
+  <rect x="220" y="500" width="66" height="36" rx="5" class="furn"/>
+  <text x="253" y="565" class="lbl muted" text-anchor="middle">Toalettbord(?)</text>
+</svg>
+
+<h2>Funn i rommene</h2>
+<ul>
+<li><strong>Pult</strong>: notater i blått («Det gylne eselet») og purpur («Oppdagelser») blekk; blekkhus, fjærpenn, blekkspor; pipe med tobakk</li>
+<li><strong>Stol</strong>: veltet — Janussi falt ut i skrivende stund?</li>
+<li><strong>Bokhylle</strong>: «Eksperimentell magi» mangler en bok på «E»; memoarene «Erindringer fra siste eventyr»</li>
+<li><strong>Pengeskap</strong>: saffiren og én lapp mangler; 5 diamanter, 1000 platinum, Mechanus-støv urørt</li>
+<li><strong>Lenestol</strong>: kattehår og hestehår i trekket</li>
+<li><strong>Rundt liket</strong>: to små ledd fra en lenke</li>
+<li><strong>Liket</strong>: nøyaktig plassering i rommet står ikke i notatene — tegnet inn ved pulten som gjetning (den veltede stolen + «falt ut i skrivende stund»)</li>
+</ul>
+
+</main>
+<footer>Oppdatert 2026-08-15 · bygget fra kampanjenotatene i <code>kjetilbk/brain</code></footer>
+</body>
+</html>

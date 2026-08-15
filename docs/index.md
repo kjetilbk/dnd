@@ -1,6 +1,8 @@
 
 # Bokbinderen Lirion
 
+> 🕯️ **[Kampanjenotater: Candlekeep-mysteriet](candlekeep/)** — avhør, tidslinje, åstedskart
+
 ## Innhold
 * TOC
 {:toc}
