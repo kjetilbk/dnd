@@ -11,12 +11,16 @@
 <body>
 <header>
   <div class="site-title"><a href="index.html">🕯️ Candlekeep-mysteriet</a></div>
-  <nav><a href="index.html" class="active">Kampanjen</a><a href="tidslinje.html">Tidslinje</a><a href="aastedskart.html">Åstedskart</a><a href="candlekeep-avhorsnotater-2026-08.html">Rånotater I</a><a href="candlekeep-notater-2026-08-del2.html">Rånotater II</a><a href="candlekeep-notater-aug-2026.html">Kilde</a></nav>
+  <nav><a href="index.html" class="active">Kampanjen</a><a href="tidslinje.html">Tidslinje</a><a href="aastedskart.html">Åstedskart</a><a href="candlekeep-avhorsnotater-2026-08.html">Rånotater I</a><a href="candlekeep-notater-2026-08-del2.html">Rånotater II</a><a href="candlekeep-notater-aug-2026.html">Kilde</a><a href="candlekeep-sesjon-2026-09-20.html">Sesjon 20.09</a></nav>
 </header>
 <main>
 <h1>Candlekeep-kampanjen (D&amp;D)</h1>
-<p>Pågående rollespillkampanje: et <strong>mordmysterium i Candlekeep</strong>. Kjetil spiller <strong>Lirion</strong>. Rå transkripsjoner ligger i <code>raw/</code> (<a href="candlekeep-avhorsnotater-2026-08.html">candlekeep-avhorsnotater-2026-08</a>, <a href="candlekeep-notater-2026-08-del2.html">candlekeep-notater-2026-08-del2</a>).</p>
-<p>Publiseres som lesbar side på GitHub Pages: <a href="https://kjetilbk.github.io/brain/">https://kjetilbk.github.io/brain/</a> — bygges av <code>scripts/candlekeep-site/build.py</code> via <code>.github/workflows/candlekeep-pages.yml</code> på push til main. <strong>Kun <code>candlekeep-*</code>-filer publiseres</strong> (resten av hjernen er privat); nye sesjonsnotater plukkes opp automatisk så lenge de følger navnekonvensjonen.</p>
+<p>Pågående rollespillkampanje: et <strong>mordmysterium i Candlekeep</strong>. Kjetil spiller <strong>Lirion</strong>. Rå transkripsjoner ligger i <code>raw/</code> (<a href="candlekeep-avhorsnotater-2026-08.html">candlekeep-avhorsnotater-2026-08</a>, <a href="candlekeep-notater-2026-08-del2.html">candlekeep-notater-2026-08-del2</a>, samt sesjonsopptaket <code>raw/dnd-transkripsjon-2026-09-20.md</code> — se <a href="candlekeep-sesjon-2026-09-20.html">candlekeep-sesjon-2026-09-20</a>).</p>
+<p>Følget er fire: <strong>Lirion</strong>, <strong>Lyng</strong>, <strong>Glugan</strong>(?) og <strong>Gustav Abadeus</strong>. De kom ut av feriket akkurat den dagen Janussi ble funnet død — de var der på et annet oppdrag, på jakt etter en bibliotekar, og tida går annerledes der inne. At nettopp de ble satt på saken har de tre teorier om: at noen vil ha en udugelig etterforskning, at de nettopp hadde imponert noen, eller at friske øyne utenfra er poenget. Gjengens ordtak er <em>«sammen er vi store oss»</em>.</p>
+<p>Publiseres som lesbar side på GitHub Pages: <a href="https://kjetilbk.github.io/dnd/candlekeep/">https://kjetilbk.github.io/dnd/candlekeep/</a> — den bygde siden ligger i <code>docs/candlekeep/</code> i det offentlige repoet <code>kjetilbk/dnd</code> (brain er privat og kan ikke serve Pages på Free-planen). Publiser oppdaterte notater med <code>scripts/candlekeep-site/publish.sh</code> (bygger + pusher til dnd-repoet). <strong>Kun <code>candlekeep-*</code>-filer publiseres</strong>; nye sesjonsnotater plukkes opp automatisk så lenge de følger navnekonvensjonen.</p>
+<blockquote>
+<p><strong>Advarsel om navngiving:</strong> at opplukking er automatisk betyr også at et <code>candlekeep-*</code>-navn i <code>raw/</code> er en publiseringsbeslutning. Rå sesjonsopptak inneholder bordprat som ikke hører hjemme på en offentlig side — derfor heter transkripsjonen fra 20.09 <code>raw/dnd-transkripsjon-2026-09-20.md</code> og ikke <code>candlekeep-...</code>. Legg råopptak under <code>dnd-</code>, og la den kuraterte versjonen i <code>wiki/sources/candlekeep-*</code> være det som publiseres.</p>
+</blockquote>
 <p>Om Lirion: har lest mye av den fremragende magikeren fra Vanndyp (se Avoste under).</p>
 <h2>Saken</h2>
 <p><strong>Førstevokter abbed Janussi er myrdet.</strong> (Førstevokter velges av Eldvokterne.) Eldre halvork, langt hvitt hår og skjegg (velfrisert), venstre bein erstattet av en magisk/mekanisk protese. Funnet <strong>08:00 av Alay Ayven eller husholdersken Kristtorn; Alay rapporterte.</strong> Sammenknust brystkasse med et åpent hull — <strong>hjertet er borte</strong>, ingen andre organer er rørt. Arkivmester Møy Bokorm er fungerende førstevokter.</p>
@@ -64,53 +68,85 @@ For varselet som aldri hørtes mer</p>
 <li><strong>Soverommet (2. etasje, fra romskissen)</strong>: seng, ovn (magiske runer?), nattbord (svak hvisken?), toalettbord(?), driftglobus(?); edelsteinen tegnet inn på skissen</li>
 </ul>
 <h2>Tidslinje (Fimbulsaften — dagen før liket ble funnet)</h2>
-<p>Fimbulsaften = tradisjon med opprydning; fimbulsmiddag med loddtrekning om presanger. Fra avhør (særlig Kristtorn):</p>
+<p>Fimbulsaften = tradisjon med opprydning; fimbulsmiddag med loddtrekning om presanger. Fra avhør (særlig Kristtorn), utvidet med Karlans og Løyvins vitnemål 20.09.</p>
 <table>
 <thead>
 <tr>
 <th>Tid</th>
 <th>Hendelse</th>
+<th>Kilde</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>08.00</td>
-<td>Møtte Karlan — «så ut som en tordensky»</td>
+<td>Møtte Karlan — «så ut som en tordensky». <strong>Karlans versjon:</strong> han ba om flere vektere og ressurser; Janussi var «ekstremt avvisende»; høylytt krangel</td>
+<td>Kristtorn · Karlan</td>
 </tr>
 <tr>
 <td>09.00</td>
 <td>Avoste på besøk — ikke gode venner med Janussi; «hykler»</td>
+<td>Kristtorn</td>
 </tr>
 <tr>
 <td>11.00</td>
 <td>Daral innom — solid bakrus, «dramatisk», ikke i stand til å drive etterforskning</td>
+<td>Kristtorn</td>
 </tr>
 <tr>
 <td>11.30</td>
 <td>Sylvira Savikas(?) — sur, rasende; «fordufter»; noe hun/han så 02.00–03.00 (→ Hovedbiblioteket)</td>
+<td>Kristtorn</td>
+</tr>
+<tr>
+<td><strong>14.30</strong></td>
+<td><strong>Feminor</strong> på Eike apotek — ba om forkjølelsesmiddel</td>
+<td>Løyvin</td>
+</tr>
+<tr>
+<td><strong>15.00</strong></td>
+<td><strong>Alay Ayven</strong> på Eike apotek — ba om noe mot mageplager</td>
+<td>Løyvin</td>
 </tr>
 <tr>
 <td>kveld</td>
-<td>Fimbulsmiddag — dramatiske sekvenser; krangel med Janussi (turbulent forhold)</td>
+<td>Fimbulsmiddag — dramatiske sekvenser; krangel med Janussi (turbulent forhold). Gaveutvekslingen gikk skjevt; dårlig stemning. <strong>Karlan var ikke til stede</strong> — sikkerhetssjefen deltar ikke</td>
+<td>Kristtorn · Karlan</td>
 </tr>
 <tr>
 <td>21.00</td>
 <td>Feminor Skrivenbark kom innom</td>
+<td>Kristtorn</td>
 </tr>
 <tr>
 <td>22.30</td>
 <td>Daral hamrer på døren; ble sluppet inn; styrtet ned mot [stabelen?]</td>
+<td>Kristtorn</td>
+</tr>
+<tr>
+<td><strong>etter midnatt</strong></td>
+<td><strong>Avtalt møte i høytårnets forelesningssal</strong> — iflg. lapp på infernalsk funnet under eviggrønntreet</td>
+<td>funn i spisesalen</td>
 </tr>
 <tr>
 <td>00.00</td>
 <td><strong>DUNK</strong> — (drapsøyeblikket?)</td>
+<td>Kristtorn</td>
+</tr>
+<tr>
+<td>02.00–03.00</td>
+<td>Savikas(?) så noe → Hovedbiblioteket</td>
+<td>Kristtorn</td>
 </tr>
 <tr>
 <td>08.00 (neste dag)</td>
 <td>Liket funnet av Alay Ayven / Kristtorn; Alay rapporterte</td>
+<td>Kristtorn</td>
 </tr>
 </tbody>
 </table>
+<p>Merk rekkefølgen: lappen ber om et møte <strong>etter midnatt</strong>, og DUNK-en kommer 00.00. Enten er<br />
+avtalen selve drapsøyeblikket, eller så rakk Janussi aldri fram til høytårnet.</p>
 <p>Presang-sporet: <strong>Maral Thune</strong> trakk lodd og skulle levere presang til Savikas ved eviggrønntreet — en <strong>ekstraplanetær kikkert</strong> (kan brukes hos Savikas, astronomikon). Tidligere avhør sa gaven «visstnok var fra Janussi».</p>
 <h2>Persongalleri</h2>
 <ul>
@@ -119,18 +155,26 @@ For varselet som aldri hørtes mer</p>
 <li><strong>Eldvokter Sylvira Savikas</strong> — skummel; flink «og mye»; arkeologi («kjedelig»); kosmologi og planetvandring. Turbulent forhold til Janussi.</li>
 <li><strong>Eldvokter Teles Avoste</strong> — kronomagi, veven, besvergelse; streng, flink, vanskelige eksamener. Interessert i Ironi etter blekkhus-episoden. Trolig han som er den fremragende magikeren fra Vanndyp — «anerkjennes av sin generasjon som den aller fremste»; regnes som litt rart at han ikke er førstevokter(?).</li>
 <li><strong>Eldvokter Alay Ayven</strong> — guddommelig viten. Fant liket.</li>
-<li><strong>Eldvokter Kasryn</strong> — naturvitenskap; grei.</li>
+<li><strong>Eldvokter Kasryn</strong> — naturvitenskap; grei. Fra <strong>feriket</strong>, bundet til sitt <strong>modertre</strong>. <strong>Janussi fikk modertreet flyttet fra feriket til Candlekeep</strong> for hennes skyld — Løyvin antyder tydelig et forhold mellom de to.</li>
 <li><strong>Eldvokter Daral</strong> — poet, spydig.</li>
 <li><strong>Eldvokter Alkrist</strong> — militærstrateg.</li>
 <li><strong>Visir Aag</strong> — githzerai-eldvokter; kan forbudte bøker, astronomiske bøker; «gave: vandødt».</li>
 <li><strong>Feminor Skrivenbark</strong> — kan bøker; historisk viten, Torils kulturer.</li>
-<li><strong>Maral Thune</strong> — ingeniør (professor, mekanikk/proteser?). Quest: smøremiddel til Thunes stemmerør. Eier presisjonslupen fra pengeskapet.</li>
+<li><strong>Maral Thune</strong> — ingeniør (professor, mekanikk/proteser?). Eier presisjonslupen fra pengeskapet. Quest om smøremiddel til stemmerøret: <strong>olje anskaffet på Eike apotek 20.09, ikke levert ennå.</strong></li>
 <li><strong>Kristtorn</strong> — husholderske; gråter; varslet/rapporterte.</li>
 <li><strong>Ironi</strong> — egen karakter i kampanjen. Spolte tilbake tiden da et blekkhus holdt på å falle midt i en av Avostes forelesninger — Avoste har vært interessert siden.</li>
-<li><strong>Karlan</strong> — «ikke ved sin fulle fem» iflg. Bokorm; Vektes Tadrik hører til under Karlan(?).</li>
+<li><strong>Karlan Rotfeste</strong> — vektermester og <strong>sikkerhetssjef</strong>. «Ikke ved sin fulle fem» iflg. Bokorm; Vektes Tadrik hører til under Karlan(?). Avhørt 20.09 — se eget avsnitt under. Bor i <strong>sjøvoktertårnet</strong>; flyttet dit fra en portnerbolig. Forelsket i Savikas.</li>
 <li><strong>Vektmester Balan(?)</strong> — usikker lesning.</li>
 <li>«Feminor og Teles Avoste rekker ikke opp hånda» (situasjon uklar — forsamling?).</li>
 <li><strong>Katten</strong> — Janussis(?) katt; vitne (se avhør).</li>
+</ul>
+<h3>Nye bekjentskaper (20.09.2026)</h3>
+<ul>
+<li><strong>Mirim</strong> — spektral <strong>sølvdrage</strong> i et bibliotekkammer dypt i katakombene. Angrep Glødsvern for lenge siden, ble beseiret av <strong>Torjom(?), den aller første førstevokteren</strong>, og bundet med en besvergelse til å vokte stedet — en binding som holdt henne også etter døden. Velvillig, ensom, nå venn av følget. <strong>Janussi ga henne en bok for fem–ti år siden</strong>; hun husker ikke hvilken. Hun nevner en «frue» — en stor rød drage et sted over.</li>
+<li><strong>Løyvin</strong> — <strong>satyr</strong>, driver <strong>Eike apotek</strong> i et trehus i det enorme eiketreet ved sjøvoktertårnet. Fra feriket, gammel venn av Kasryn, bor i hennes modertre. Selger ikke gift, men har den til forskning — motgift krever gift. Ekornet <strong>Smule(?)</strong> holder til på arbeidsbordet.</li>
+<li><strong>Blotus(?)</strong> — følgets tilviste hjelper på Glødsvern. Guider dem, henter folk, lager lunsj. Beskriver <strong>arkivet</strong> som elendig organisert — dit havner det ingen kurator vil ha.</li>
+<li><strong>Torjom(?)</strong> — Glødsverns aller første førstevokter. Beseiret og bandt Mirim.</li>
+<li><strong>Kaptein Snufsesand(?)</strong> og <strong>Marga(?)</strong> — spøkelsespirater. Lirion vant duell mot Snufsesand; premien var Margas kikkert-musket.</li>
 </ul>
 <h2>Avhør</h2>
 <ul>
@@ -140,6 +184,85 @@ For varselet som aldri hørtes mer</p>
 <li><strong>Thune</strong>: skulle levere en gave under middagen — visstnok fra Janussi. Hadde (visstnok) et forhold til Janussi.</li>
 <li><strong>Kasryn</strong>: kanskje også et forhold til Janussi.</li>
 </ul>
+<h3>Karlan Rotfeste (20.09.2026)</h3>
+<p>Avhørt i tepidariet, et meditasjonskammer dypt i katakombene, hvor han har sittet jevnlig det siste halvåret.</p>
+<ul>
+<li><strong>Hans versjon av 08.00-møtet</strong>: han ba om flere vektere og ressurser mot eksterne trusler; Janussi avviste ham blankt; det ble høylytt krangel. Han sier han ikke bærer nag, men er «ikke fornøyd».</li>
+<li><strong>Hva han vokter mot</strong>: konstante forsøk på å stjele Glødsverns hemmeligheter. Innbrudd avdekkes jevnlig, og det har vært kamper i skogene utenfor — blant annet mot vampyrer(?).</li>
+<li><strong>Hans teori er forgiftning.</strong> Han undersøkte liket selv og tok prøver. Det svarte på fingre og lepper mener han er gift, ikke bare blekk. <strong>Spisesalen var hans neste ledetråd</strong> — samme spor følget fulgte samme dag.</li>
+<li><strong>Han mistenker Møy Bokorm</strong>: hun har engasjert seg for mye, kaster mistanke på både ham og Sylvira, og han tror hun beskytter den skyldige.</li>
+<li><strong>Mest ambisiøse eldvokter: Teles Avoste.</strong> Han nevner også dårlig stemning mellom Janussi og Daral.</li>
+<li><strong>Han benekter at udyret finnes</strong> — det er konstant vakthold om natten, og han har «full oversikt». Følget påpekte at Glødsvern kryr av uhyrer, og at vaktholdet åpenbart ikke rekker ned i katakombene.</li>
+<li><strong>Det som er galt med ham</strong>: noe «brant helt av» / «ble etset bort» ganske nylig. Han er «ikke all there I should be» og leter etter en <strong>kur</strong>. Han kan ikke forklare hva som skjedde uten å utlevere en nær venn — navnet han ikke ville si høyt var <strong>Savikas</strong>. Han er forelsket i henne og ville gjort hva som helst for henne.</li>
+<li><strong>Blykjedet</strong>: Lirion la merke til et kjede under kjortelen hans med lenker som <strong>matcher de brutte lenkene funnet ved Janussis hals</strong>. Det er et nøkkelkjede til skjulte kamre. Flere eldvoktere bærer slike, og Karlan mistenker at noen kan ha stukket av med et av Janussis.</li>
+</ul>
+<p><strong>Avhøret endte dårlig.</strong> Lyng kastet <em>charm person</em> på ham for å presse fram svar. Formelen varer ett minutt, og målet vet etterpå at det skjedde. Karlan skjønte det, ble rasende, og Lyng stakk av. Følget har mistet hans velvilje.</p>
+<p>Lirions vurdering: ikke morderen — en grandios mann som plager seg selv med store tanker.</p>
+<h3>Løyvin, Eike apotek (20.09.2026)</h3>
+<ul>
+<li><strong>Besøkende på Fimbulsaften</strong>: Feminor ~14.30 (forkjølelsesmiddel), Alay Ayven ~15.00 (mageplager). Karlan var innom en måned tidligere, også for forkjølelsesmiddel.</li>
+<li>Han selger ikke gift, men har den til forskning — man trenger gift for å lage motgift.</li>
+<li><strong>Kasryns modertre</strong> ble flyttet fra feriket til Candlekeep av Janussi. Løyvin bor i det treet og beskriver Janussi som en sjarmør.</li>
+</ul>
+<h2>Funnene i spisesalen (20.09.2026)</h2>
+<p>Spisesalen sto fortsatt pyntet til Fimbul — nesten fire meter høyt eviggrønt tre, bånd, glasskuler, misteltein, lukt av røkt fisk og krydret vin. Oppryddingen hadde vært overflatisk. Dette lå igjen:</p>
+<ol>
+<li><strong>Sølt svart, blekkaktig stoff</strong> ved enden av bordet der Janussi satt.</li>
+<li><strong>Sammenkrøllet innpakningspapir med Janussis navn</strong> på. Ristes det, drysser det <strong>gult pulver</strong> — bittert på smak.</li>
+<li><strong>Under eviggrønntreet</strong>: mer innpakningspapir og en <strong>lapp på infernalsk</strong>: <em>«Møt meg i høytårnets forelesningssal etter midnatt.»</em> <strong>Sylvira snakker infernalsk.</strong></li>
+<li><strong>På et konsollbord ved vinduet</strong>: en messingskål med en halvt oppbrent etikett dekket av stearin. Eneste ord som lar seg tyde står på <strong>sylvansk</strong>: <strong>«tårer»</strong>. Janussi hadde tydelige tårespor i ansiktet.</li>
+<li><strong>I treet</strong>: en pyntekule som ikke er en pyntekule, men et <strong>hetteglass</strong> uten etikett, med rester av det <strong>samme gule pulveret</strong>.</li>
+<li><strong>Ved føttene til en statue</strong> (mann med hevet beger og lyre): <strong>kloremerker</strong> skrapt ned i gulvet. I begeret over sto en tung <strong>sekk med blod</strong>.</li>
+</ol>
+<p><strong>I sekken: Janussis hjerte, en blodig kjøttøks og en tynn røkelsespinne.</strong></p>
+<p>Kjøttøksa kan være redskapet som fjernet hjertet uten å være selve drapsvåpenet. Følget holder funnet tett — hjertet åpner for å gjenopplive Janussi eller snakke med den døde, og de mistenker eldvokterne selv.</p>
+<h3>Bevis i følgets besittelse</h3>
+<table>
+<thead>
+<tr>
+<th>Gjenstand</th>
+<th>Hvor funnet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Janussis hjerte</td>
+<td>i blodsekken i statuens beger</td>
+</tr>
+<tr>
+<td>Blodig kjøttøks</td>
+<td>samme sted</td>
+</tr>
+<tr>
+<td>Tynn røkelsespinne</td>
+<td>samme sted</td>
+</tr>
+<tr>
+<td>Innpakningspapir med Janussis navn + gult pulver</td>
+<td>bordet i spisesalen</td>
+</tr>
+<tr>
+<td>Hetteglass med rester av gult pulver</td>
+<td>hengt opp som pyntekule i eviggrønntreet</td>
+</tr>
+<tr>
+<td>Lapp på infernalsk («etter midnatt»)</td>
+<td>under eviggrønntreet</td>
+</tr>
+<tr>
+<td>Oppbrent etikett, sylvansk: «tårer»</td>
+<td>messingskål på konsollbord</td>
+</tr>
+<tr>
+<td>Olje til Thunes stemmerør</td>
+<td>kjøpt på Eike apotek</td>
+</tr>
+<tr>
+<td>Margas kikkert-musket</td>
+<td>duellpremie fra kaptein Snufsesand</td>
+</tr>
+</tbody>
+</table>
 <h2>Hovedmistenkte</h2>
 <table>
 <thead>
@@ -151,23 +274,31 @@ For varselet som aldri hørtes mer</p>
 <tbody>
 <tr>
 <td><strong>Savikas</strong></td>
-<td>Borte; elskerinne/mistress-kobling; samme interessefelt som Janussi; de kranglet (turbulent forhold)</td>
+<td><strong>Styrket kraftig 20.09.</strong> Snakker infernalsk — språket på midnattslappen. Sylvansk «tårer» + Janussis tårespor. Sett to ganger hos Janussi den dagen, og den ene gangen «luktet det ikke som henne». Noe hun har gjort mot Karlan «brant av» ham. Ligger nå syk på kammerset mens folk faller om av mistenkt forgiftning. Elskerinne-kobling; samme interessefelt; turbulent forhold</td>
 </tr>
 <tr>
 <td><strong>Karlan</strong></td>
-<td>Oppjaget; sinne; har drevet egen etterforskning</td>
+<td>Oppjaget; sinne; har drevet egen etterforskning. <strong>Bærer et blykjede som matcher lenkene ved Janussis hals.</strong> Men: åpen om det, og Lirion leser ham ikke som morderen</td>
+</tr>
+<tr>
+<td><strong>Møy Bokorm</strong></td>
+<td><strong>Ny 20.09</strong> — Karlan mistenker at hun overengasjerer seg, kaster mistanke på ham og Sylvira, og beskytter den skyldige. Hun er dessuten den som overtok som fungerende førstevokter</td>
 </tr>
 <tr>
 <td><strong>Avoste</strong></td>
-<td>Eldvokter; ikke gode venner med Janussi («hykler»)</td>
+<td>Eldvokter; ikke gode venner med Janussi («hykler»). Karlan peker på ham som den mest ambisiøse</td>
 </tr>
 <tr>
 <td><strong>Kasryn</strong></td>
-<td>Vendte tilbake til åstedet</td>
+<td>Vendte tilbake til åstedet. Forhold til Janussi styrket: han flyttet modertreet hennes fra feriket</td>
 </tr>
 <tr>
 <td><strong>Alay</strong></td>
-<td>Fant liket</td>
+<td>Fant liket. Hentet noe mot mageplager på apoteket ~15.00 på Fimbulsaften</td>
+</tr>
+<tr>
+<td><strong>Daral</strong></td>
+<td>Dårlig stemning med Janussi iflg. Karlan; hamret på døra 22.30</td>
 </tr>
 <tr>
 <td><strong>Kristtorn</strong></td>
@@ -177,7 +308,18 @@ For varselet som aldri hørtes mer</p>
 </table>
 <h2>Quest / åpne tråder</h2>
 <ul>
-<li>Smøremiddel til Thunes stemmerør</li>
+<li>~~Skaffe smøremiddel til Thunes stemmerør~~ — <strong>olje kjøpt 20.09</strong>; gjenstår å levere den</li>
+<li><strong>Hvem ga Janussi gaven med det gule pulveret?</strong> Ironi var servitør under middagen og kan vite hvem som ga hva til hvem</li>
+<li><strong>Hva er det gule pulveret?</strong> Bittert; samme stoff i gavepapiret og i hetteglasset i treet</li>
+<li><strong>Hvem skrev midnattslappen på infernalsk</strong> — og kom Janussi seg noensinne til høytårnet?</li>
+<li><strong>Hva betyr «tårer» på sylvansk</strong> — og hvem brente etiketten?</li>
+<li><strong>Hjertet</strong>: skal det brukes til å gjenopplive Janussi eller snakke med den døde? Hvem kan stole på med det?</li>
+<li><strong>Kloremerkene ved statuen</strong> — udyret, eller noe som skulle se sånn ut?</li>
+<li><strong>Hvem stjal nøkkelkjedet fra Janussi?</strong> Karlan bærer et tilsvarende blykjede til skjulte kamre</li>
+<li><strong>Hva skjedde med Karlan?</strong> Noe «brant av» ham; han leter etter en kur; Savikas er innblandet</li>
+<li><strong>Hvilken bok ga Janussi til Mirim</strong> for fem–ti år siden?</li>
+<li><strong>Den røde dragen</strong> Mirim kaller «fruen» — hvem er hun?</li>
+<li>Reparere forholdet til Karlan etter charm person-tabben</li>
 <li>Hvem er den «hornede tobeinte» som ikke luktet som seg selv? (forkledning/shapeshifter?)</li>
 <li>Hvorfor er hjertet tatt — og bare hjertet? Kobling til profetien («den høye vokterens hjerte skal bli knust»)</li>
 <li>Profetien varsler at <strong>tre voktere skal forvris</strong> — hvem er de to neste?</li>
@@ -191,6 +333,6 @@ For varselet som aldri hørtes mer</p>
 <li>Hvorfor rekker ikke Feminor og Teles Avoste opp hånda?</li>
 </ul>
 </main>
-<footer>Oppdatert 2026-08-15 · bygget fra kampanjenotatene i <code>kjetilbk/brain</code></footer>
+<footer>Oppdatert 2026-09-20 · bygget fra kampanjenotatene i <code>kjetilbk/brain</code></footer>
 </body>
 </html>
