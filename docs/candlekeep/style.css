@@ -68,7 +68,7 @@ li { margin: 0.25rem 0; }
 }
 
 /* --- Timeline --- */
-.timeline { position: relative; margin: 1.8rem 0; padding-left: 6.2rem; }
+.timeline { position: relative; margin: 1rem 0 1.8rem; padding-left: 6.2rem; }
 .timeline::before {
   content: "";
   position: absolute;
@@ -77,14 +77,6 @@ li { margin: 0.25rem 0; }
   bottom: 0.4rem;
   width: 2px;
   background: var(--rule);
-}
-.tl-day {
-  position: relative;
-  margin: 1.8rem 0 1rem -6.2rem;
-  color: var(--accent);
-  font-variant: small-caps;
-  letter-spacing: 0.06em;
-  font-size: 1.05rem;
 }
 .tl-event { position: relative; margin-bottom: 1.1rem; }
 .tl-event::before {
@@ -118,24 +110,6 @@ li { margin: 0.25rem 0; }
 }
 .tl-major .tl-card { border-color: var(--accent); }
 .tl-src { display: block; color: var(--muted); font-style: italic; font-size: 0.85rem; margin-top: 0.2rem; }
-.cat-seq { counter-reset: cat; list-style: none; padding-left: 0; }
-.cat-seq li {
-  background: var(--panel);
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-  padding: 0.45rem 0.9rem 0.45rem 2.6rem;
-  margin: 0.45rem 0;
-  position: relative;
-}
-.cat-seq li::before {
-  counter-increment: cat;
-  content: counter(cat);
-  position: absolute;
-  left: 0.8rem;
-  top: 0.55rem;
-  color: var(--accent);
-  font-weight: bold;
-}
 
 /* --- Crime scene map --- */
 .room-map { width: 100%; height: auto; margin: 1.4rem 0; }
@@ -156,6 +130,51 @@ li { margin: 0.25rem 0; }
 .room-map .lbl { fill: var(--text); font-size: 16px; font-family: Georgia, serif; }
 .room-map .lbl.muted, .room-map .lbl .muted { fill: var(--muted); font-size: 14px; }
 .room-map .gem-lbl { fill: var(--accent); }
+.muted { color: var(--muted); }
+mark { background: rgba(217, 169, 78, 0.22); color: #f3ead8; padding: 0 0.1em; border-radius: 2px; }
+
+/* --- Character gallery --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 0.7rem;
+  margin: 0.8rem 0 1.4rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  text-decoration: none;
+  color: var(--text);
+  line-height: 1.35;
+}
+.card:hover { border-color: var(--accent); }
+.card strong { color: var(--accent); }
+.card .muted { font-size: 0.85rem; }
+
+/* --- Mentions on character pages --- */
+details.mentions {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  margin: 0.6rem 0;
+  padding: 0.4rem 0.9rem;
+}
+details.mentions summary { cursor: pointer; color: var(--accent); }
+details.mentions ul { list-style: none; padding-left: 0; margin: 0.4rem 0; }
+details.mentions li { margin: 0.55rem 0; font-size: 0.95rem; line-height: 1.5; }
+.m-where { display: block; font-size: 0.85rem; }
+.m-text { display: block; }
+
+/* --- Session list --- */
+.sessions { list-style: none; padding-left: 0; }
+.sessions li { margin: 0.9rem 0; }
+.sessions li a { display: block; font-size: 1.08rem; }
+.sessions .muted { font-size: 0.92rem; }
 footer {
   max-width: 46rem;
   margin: 0 auto;
